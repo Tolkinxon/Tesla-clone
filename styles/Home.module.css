@@ -1,6 +1,6 @@
 /********** FONT ********/
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins&display=swap');
 /********** NAVBAR *********/
 .navbar {
   display: flex;
@@ -52,6 +52,11 @@
   height: 100vh;
   display: grid;
   place-items: center;
+}
+.section:nth-child(3) {
+  background: url('../public/images/model-y.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .textsArea {
