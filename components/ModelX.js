@@ -1,23 +1,29 @@
 import React from 'react'
 import styles from '../styles/Home.module.css'
+import Reveal from 'react-reveal/Reveal'
+
 
 
 export default function ModelX() {
   return (
     <section className={styles.section}>
-    <div className={styles.textsArea}>
-      <h3>Model X</h3>
-      <p>
-        Order Online
-        <span className={styles.touchless}>Touchless delivery</span>
-      </p>
-    </div>
-    <div className={styles.buttons}>
-      <div className={styles.btnMain}>
-        <span className={styles.btn}>custom order</span>
-        <span className={styles.btn}>exciting invertory</span>
-      </div>
-    </div>
+      <Reveal effect='showing'>
+        <div className={styles.textsArea}>
+          <h3>Model X</h3>
+          <p>
+            Order Online
+            <span className={styles.touchless}>Touchless delivery</span>
+          </p>
+        </div>
+      </Reveal>
+      <Reveal effect='showing2'>
+        <div className={styles.buttons}>
+          <div className={styles.btnMain}>
+            <span className={styles.btn}>custom order</span>
+            <span className={styles.btn}>exciting invertory</span>
+          </div>
+        </div>
+      </Reveal>
   </section>
   )
 }
