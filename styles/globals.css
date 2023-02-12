@@ -1,0 +1,29 @@
+.showing {
+  animation: showing 1s ease;
+}
+
+.showing2 {
+  animation: showing2 3s ease;
+}
+
+@keyframes showing {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes showing2 {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

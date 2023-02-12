@@ -28,6 +28,8 @@ export default function Navbar() {
         <li className={styles.items}>Account</li>
         <li className={styles.items}>Menu</li>
       </div>
+      <div>
+      </div>
     </nav>
   )
 }
