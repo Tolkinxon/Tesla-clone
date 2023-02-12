@@ -12,12 +12,14 @@ export default function SolarPanel() {
         </div>
       </Reveal>
 
-      <div className={styles.buttons}>
-        <div className={styles.btnMain}>
-          <span className={styles.btn}>order now</span>
-          <span className={styles.btn}>learn more</span>
-        </div>
-      </div>
+      <Reveal effect='showing2'>
+          <div className={styles.buttons}>
+            <div className={styles.btnMain}>
+              <span className={styles.btn}>order now</span>
+              <span className={styles.btn}>learn more</span>
+            </div>
+          </div>
+      </Reveal>
     </section>
   )
 }

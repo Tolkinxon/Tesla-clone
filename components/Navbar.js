@@ -3,7 +3,11 @@ import React from 'react'
 import styles from '../styles/Home.module.css'
 
 export default function Navbar() {
+
+  console.log(data);
   return (
+
+
     <nav className={styles.navbar}>
       <Link href="/">
         <img
