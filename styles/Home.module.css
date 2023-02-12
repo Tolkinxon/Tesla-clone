@@ -58,6 +58,26 @@
   background-size: cover;
   background-position: center;
 }
+.section:nth-child(4) {
+  background: url('../public/images/model-s.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.section:nth-child(5) {
+  background: url('../public/images/model-x.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.section:nth-child(6) {
+  background: url('../public/images/solar-roof.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.section:nth-child(7) {
+  background: url('../public/images/solar-panel.jpg');
+  background-size: cover;
+  background-position: center;
+}
 
 .textsArea {
   text-align: center;

@@ -2,6 +2,10 @@ import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import Header from '../components/Header'
 import ModelY from '@/components/ModelY'
+import ModelX from '@/components/ModelX'
+import ModelS from '@/components/ModelS'
+import SolarRoof from '@/components/SolarRoof'
+import SolarPanel from '@/components/SolarPanel'
 
 export default function Home() {
   return (
@@ -14,6 +18,10 @@ export default function Home() {
       <Navbar />
       <Header />
       <ModelY />
+      <ModelS />
+      <ModelX />
+      <SolarRoof />
+      <SolarPanel />
     </>
   )
 }
