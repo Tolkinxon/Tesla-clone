@@ -69,12 +69,17 @@
   background-position: center;
 }
 .section:nth-child(6) {
-  background: url('../public/images/solar-roof.jpg');
+  background: url('../public/images/solar-panel.jpg');
   background-size: cover;
   background-position: center;
 }
 .section:nth-child(7) {
-  background: url('../public/images/solar-panel.jpg');
+  background: url('../public/images/solar-roof.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.section:nth-child(8) {
+  background: url('../public/images/accessories.jpg');
   background-size: cover;
   background-position: center;
 }

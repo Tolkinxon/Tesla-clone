@@ -1,17 +1,16 @@
 import React from 'react'
 import styles from '../styles/Home.module.css'
 
-export default function SolarRoof() {
+export default function Accessories() {
   return (
     <section className={styles.section}>
       <div className={styles.textsArea}>
-        <h3>Solar Roof</h3>
-        <p>Produce Clean Energy from Your Roof</p>
+        <h3>Accessories</h3>
+        <p></p>
       </div>
       <div className={styles.buttons}>
         <div className={styles.btnMain}>
-          <span className={styles.btn}>order now</span>
-          <span className={styles.btn}>learn more</span>
+          <span className={styles.btn}>shop now</span>
         </div>
       </div>
     </section>

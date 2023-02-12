@@ -6,6 +6,7 @@ import ModelX from '@/components/ModelX'
 import ModelS from '@/components/ModelS'
 import SolarRoof from '@/components/SolarRoof'
 import SolarPanel from '@/components/SolarPanel'
+import Accessories from '../components/Accessories'
 
 export default function Home() {
   return (
@@ -14,14 +15,14 @@ export default function Home() {
         <title>Tesla clone</title>
         <meta name="Tolkinxon" content="about tesla company" />
       </Head>
-
       <Navbar />
       <Header />
       <ModelY />
       <ModelS />
       <ModelX />
-      <SolarRoof />
       <SolarPanel />
+      <SolarRoof />
+      <Accessories />
     </>
   )
 }
