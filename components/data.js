@@ -36,5 +36,6 @@ export const data = [
     title: 'Accessories',
     path: '/',
     cName: 'sideText',
-  },
+  }
 ]
+
