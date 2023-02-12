@@ -1,6 +1,6 @@
 
 
-export const data = [
+export const dataa = [
   {
     title: 'Model S',
     path: '/',

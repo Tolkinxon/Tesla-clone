@@ -2,15 +2,19 @@ import Link from 'next/link'
 import React from 'react'
 import styles from '../styles/Home.module.css'
 import dynamic from 'next/dynamic'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { dataa } from './data'
 
 export default function Navbar() {
-  const [data, setData] = useState([])
-  const takingData = dynamic(() => import('../components/data').then((data) => setData(data.data)))
-  takingData()
+  const [data, setData] = useState(dataa)
+  const [sideBar, setSideBar] = useState(false)
+
+  const showSideBar = () => {
+    setSideBar(!sideBar)
+  }
 
   return (
-    <nav className={styles.navbar}> 
+    <nav className={styles.navbar}>
       <Link href="/">
         <img
           src="/images/logo.svg "
@@ -32,16 +36,30 @@ export default function Navbar() {
       <div className={styles.menu}>
         <li className={styles.items}>Shop</li>
         <li className={styles.items}>Account</li>
-        <li className={styles.items}>Menu</li>
+        <li className={styles.items} onClick={showSideBar}>
+          Menu
+        </li>
       </div>
-      <div>
-        <ul>
+
+      <div className={sideBar ? 'side-menu active' : 'side-menu'}>
+
+        <img 
+          onClick={showSideBar} 
+          className='closeIcon' 
+          src="/images/close.svg" 
+          width={15} 
+        />
+
+        <ul className="sideBarNav">
           {data.map((item, index) => (
-            <li key={index}>
-              <Link href={item.path}>{item.title}</Link>
+            <li className="hamburgerLinks" key={index}>
+              <Link href={item.path} className="link">
+                {item.title}
+              </Link>
             </li>
           ))}
         </ul>
+        
       </div>
     </nav>
   )
