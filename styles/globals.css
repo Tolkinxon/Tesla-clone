@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/******* REVEAL ACTIONS *****/
 .showing {
   animation: showing 1s ease;
 }
@@ -27,6 +30,7 @@
     opacity: 1;
   }
 }
+/******* REVEAL ACTIONS *****/
 
 /********** SIDE BAR ********/
 .side-menu {
@@ -41,24 +45,20 @@
 }
 
 .active {
-  animation: showSideBar linear;
   transition: 1s;
   transform: translate(10px);
   display: block;
 }
 
-@keyframes showSideBar {
-  from {
-    transform: translate(250px);
-  }
-  to {
-    transform: translate(10px);
-  }
-}
 .closeIcon {
   position: absolute;
   top: 10px;
   right: 10px;
+}
+
+.closeIcon:hover {
+  transform: rotate(180deg);
+  cursor: pointer;
 }
 
 .sideBarNav {
@@ -66,17 +66,25 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  gap: 2rem;
+  padding: 0px;
 }
 
 .hamburgerLinks,
 .link {
   list-style-type: none;
-  font-weight: 800;
+  font-weight: 600;
   margin: 10px 0;
   text-decoration: none;
   color: black;
-  font-size: 20px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.hamburgerLinks:hover {
+  background-color: grey;
 }
 
 /********** SIDE BAR ********/

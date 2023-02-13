@@ -41,7 +41,7 @@ export default function Navbar() {
         </li>
       </div>
 
-      <div className={sideBar ? 'side-menu active' : 'side-menu'}>
+      <div className={ `${ sideBar &&  'active' } side-menu` }>
 
         <img 
           onClick={showSideBar} 
