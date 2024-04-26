@@ -1,1 +1,1 @@
-{"version":3,"sources":["../scss/all-blocks/_header.scss","main.css","../scss/all-blocks/_questions.scss"],"names":[],"mappings":"AAAA;EACI,oCAAA;ACCJ;;ACFA;EACI,oCAAA;ADKJ","file":"main.css"}
+{"version":3,"sources":["../scss/_general.scss","main.css","../scss/all-blocks/_header.scss","../scss/all-blocks/_questions.scss"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,yBAAA;EACA,kBAAA;EACA,gBAAA;EACA,uEAAA;ACCJ;ADCE;EACE,kBAAA;EACA,yBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mEAAA;ACCJ;ADGA;EACI,yBAAA;EACA,YAAA;ACDJ;;ACjBA;EACI,oCAAA;ADoBJ;;AErBA;EACI,oCAAA;AFwBJ","file":"main.css"}
